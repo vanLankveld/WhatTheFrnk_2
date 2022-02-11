@@ -1,0 +1,27 @@
+@primary-color: #4d4646;
+
+wtf-button {
+  .button {
+    display         : flex;
+    flex-direction  : row;
+    flex-wrap       : nowrap;
+    justify-content : flex-end;
+    align-items     : center;
+    align-content   : stretch;
+    background-color: white;
+    border          : 1px solid @primary-color;
+    border-radius   : 1em;
+    padding         : 0.5em;
+    text-decoration : none;
+
+    .wtf-button-text {
+      font-weight  : 600;
+      flex-grow    : 1;
+      padding-right: 0.5
+    }
+
+    img {
+      height: 2.5em;
+    }
+  }
+}

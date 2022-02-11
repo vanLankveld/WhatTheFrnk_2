@@ -1,0 +1,106 @@
+@import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../../global/global.less';
+
+h4 {
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+* {
+  color: @text-color;
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  margin-bottom: 2rem;
+}
+
+header {
+  position        : fixed;
+  top             : 0;
+  right           : 0;
+  left            : 0;
+  background-color: white;
+
+  &.main-header {
+    z-index: 9999;
+  }
+
+  &.mobile-menu {
+    z-index: 99999;
+  }
+
+  .desktop-nav {
+    padding-left: 2em;
+    a {
+      flex-grow: 1;
+      text-align: center;
+
+      &.mail-nav {
+        text-align: right;
+      }
+    } 
+  }
+
+  &.mobile-menu {
+    background-color: @primary-color;
+    z-index         : 9999;
+
+    * {
+      color: white;
+    }
+
+    .nav-item {
+      padding: 1em 0;
+      color: white !important;
+      font-weight: bold;
+      &:not(:last-child) {
+        border-bottom: 1px solid @box-color-light;
+      }
+    }
+
+    &.visible {
+      visibility: visible;
+      opacity   : 1;
+      transition: opacity 0.5s linear;
+    }
+
+    &.hidden {
+      visibility: hidden;
+      opacity   : 0;
+      transition: visibility 0s 0.5s, opacity 0.5s linear;
+    }
+  }
+}
+
+.main-wrapper {
+  padding-top: 6em;
+}
+
+.center {
+  text-align: center;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.mail-icon {
+  background-size: contain;
+  width          : 1.5em;
+  height         : 1.5em;
+}
+
+.navbar-icon {
+  display            : inline-block;
+  width              : 1.5em;
+  height             : 1.5em;
+  vertical-align     : middle;
+  background-repeat  : no-repeat;
+  background-position: center;
+  background-size    : 100%;
+}
+
+section {
+  margin-bottom: 1em;
+}

@@ -1,22 +1,28 @@
 {
   "name": "what-the-frnk",
-  "version": "1.0.0",
-  "description": "What the Frnk website",
-  "main": "index.js",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Stencil App Starter",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "stencil build",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/vanLankveld/WhatTheFrnk_2.git"
+  "devDependencies": {
+    "@stencil/core": "^2.13.0",
+    "@stencil/less": "^1.0.0",
+    "@stencil/router": "^1.0.1",
+    "@types/jest": "^27.0.3",
+    "jest": "^27.4.5",
+    "jest-cli": "^27.4.5",
+    "puppeteer": "^10.0.0"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/vanLankveld/WhatTheFrnk_2/issues"
-  },
-  "homepage": "https://github.com/vanLankveld/WhatTheFrnk_2#readme",
+  "license": "MIT",
   "dependencies": {
-    "bootstrap": "^5.1.3"
+    "@adamlacombe/fa-icon": "^1.0.0",
+    "bootstrap": "^5.1.3",
+    "youtube-iframe": "^1.0.3"
   }
 }

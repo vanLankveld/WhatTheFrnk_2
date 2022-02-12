@@ -22,6 +22,10 @@ header {
   left            : 0;
   background-color: white;
 
+  .toggler-container {
+    padding-right: 0.5em
+  }
+
   &.main-header {
     z-index: 9999;
   }
@@ -85,6 +89,10 @@ header {
   border: none;
 }
 
+.can-scroll-to {
+  scroll-margin: 6em;
+}
+
 .mail-icon {
   background-size: contain;
   width          : 1.5em;
@@ -102,5 +110,9 @@ header {
 }
 
 section {
-  margin-bottom: 1em;
+    margin-bottom: 1em;
+
+    &.no-margin-bot {
+      margin-bottom: 0;
+    }
 }

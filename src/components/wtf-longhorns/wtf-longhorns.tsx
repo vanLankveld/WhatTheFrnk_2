@@ -1,4 +1,4 @@
-import { Component, h, getAssetPath } from '@stencil/core';
+import { Component, h } from '@stencil/core';
 
 @Component({
     tag: 'wtf-longhorns',
@@ -8,11 +8,11 @@ export class WtfLonghorns {
     render = () => {
         return [
             <div class="container d-none d-md-block">
-                <img src={getAssetPath(`/assets/img/longhorns.jpg`)} class="img-fluid" alt="The Longhorns" />
+                <img src={`./assets/img/longhorns.jpg`} class="img-fluid" alt="The Longhorns" />
                 { this.renderContents() }
             </div>,
             <div class="d-md-none longhorns-container">
-                <img class="img-fluid" src={getAssetPath(`/assets/img/longhorns.jpg`)} alt="The Longhorns" />
+                <img class="img-fluid" src={`./assets/img/longhorns.jpg`} alt="The Longhorns" />
                 { this.renderContents() }
             </div>
         ];
@@ -30,10 +30,8 @@ export class WtfLonghorns {
                 <br/>
                 <br/>
                 <div class="longhorns-button-container">
-                    <wtf-button newTab={true} buttonLink={"https://monkeyman.nl"} textLeft={"Boekingen"} textRight="Monkeyman" iconUrl={getAssetPath("/assets/img/monkeyman.png")}></wtf-button>
+                    <wtf-button newTab={true} buttonLink={"https://monkeyman.nl"} textLeft={"Boekingen"} textRight="Monkeyman" iconUrl={"./assets/img/monkeyman.png"}></wtf-button>
                 </div>
-                <br/>
-                <br/>
             </div>
         );
     }

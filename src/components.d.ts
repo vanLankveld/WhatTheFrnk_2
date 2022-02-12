@@ -15,6 +15,8 @@ export namespace Components {
         "textLeft": string;
         "textRight": string;
     }
+    interface WtfGigs {
+    }
     interface WtfHome {
     }
     interface WtfLogo {
@@ -22,6 +24,10 @@ export namespace Components {
     interface WtfLonghorns {
     }
     interface WtfMedia {
+    }
+    interface WtfPhotos {
+    }
+    interface WtfReviews {
     }
     interface WtfRoot {
     }
@@ -43,6 +49,12 @@ declare global {
     var HTMLWtfButtonElement: {
         prototype: HTMLWtfButtonElement;
         new (): HTMLWtfButtonElement;
+    };
+    interface HTMLWtfGigsElement extends Components.WtfGigs, HTMLStencilElement {
+    }
+    var HTMLWtfGigsElement: {
+        prototype: HTMLWtfGigsElement;
+        new (): HTMLWtfGigsElement;
     };
     interface HTMLWtfHomeElement extends Components.WtfHome, HTMLStencilElement {
     }
@@ -68,6 +80,18 @@ declare global {
         prototype: HTMLWtfMediaElement;
         new (): HTMLWtfMediaElement;
     };
+    interface HTMLWtfPhotosElement extends Components.WtfPhotos, HTMLStencilElement {
+    }
+    var HTMLWtfPhotosElement: {
+        prototype: HTMLWtfPhotosElement;
+        new (): HTMLWtfPhotosElement;
+    };
+    interface HTMLWtfReviewsElement extends Components.WtfReviews, HTMLStencilElement {
+    }
+    var HTMLWtfReviewsElement: {
+        prototype: HTMLWtfReviewsElement;
+        new (): HTMLWtfReviewsElement;
+    };
     interface HTMLWtfRootElement extends Components.WtfRoot, HTMLStencilElement {
     }
     var HTMLWtfRootElement: {
@@ -83,10 +107,13 @@ declare global {
     interface HTMLElementTagNameMap {
         "wtf-bookings": HTMLWtfBookingsElement;
         "wtf-button": HTMLWtfButtonElement;
+        "wtf-gigs": HTMLWtfGigsElement;
         "wtf-home": HTMLWtfHomeElement;
         "wtf-logo": HTMLWtfLogoElement;
         "wtf-longhorns": HTMLWtfLonghornsElement;
         "wtf-media": HTMLWtfMediaElement;
+        "wtf-photos": HTMLWtfPhotosElement;
+        "wtf-reviews": HTMLWtfReviewsElement;
         "wtf-root": HTMLWtfRootElement;
         "wtf-youtube": HTMLWtfYoutubeElement;
     }
@@ -101,6 +128,8 @@ declare namespace LocalJSX {
         "textLeft"?: string;
         "textRight"?: string;
     }
+    interface WtfGigs {
+    }
     interface WtfHome {
     }
     interface WtfLogo {
@@ -108,6 +137,10 @@ declare namespace LocalJSX {
     interface WtfLonghorns {
     }
     interface WtfMedia {
+    }
+    interface WtfPhotos {
+    }
+    interface WtfReviews {
     }
     interface WtfRoot {
     }
@@ -120,10 +153,13 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "wtf-bookings": WtfBookings;
         "wtf-button": WtfButton;
+        "wtf-gigs": WtfGigs;
         "wtf-home": WtfHome;
         "wtf-logo": WtfLogo;
         "wtf-longhorns": WtfLonghorns;
         "wtf-media": WtfMedia;
+        "wtf-photos": WtfPhotos;
+        "wtf-reviews": WtfReviews;
         "wtf-root": WtfRoot;
         "wtf-youtube": WtfYoutube;
     }
@@ -134,10 +170,13 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "wtf-bookings": LocalJSX.WtfBookings & JSXBase.HTMLAttributes<HTMLWtfBookingsElement>;
             "wtf-button": LocalJSX.WtfButton & JSXBase.HTMLAttributes<HTMLWtfButtonElement>;
+            "wtf-gigs": LocalJSX.WtfGigs & JSXBase.HTMLAttributes<HTMLWtfGigsElement>;
             "wtf-home": LocalJSX.WtfHome & JSXBase.HTMLAttributes<HTMLWtfHomeElement>;
             "wtf-logo": LocalJSX.WtfLogo & JSXBase.HTMLAttributes<HTMLWtfLogoElement>;
             "wtf-longhorns": LocalJSX.WtfLonghorns & JSXBase.HTMLAttributes<HTMLWtfLonghornsElement>;
             "wtf-media": LocalJSX.WtfMedia & JSXBase.HTMLAttributes<HTMLWtfMediaElement>;
+            "wtf-photos": LocalJSX.WtfPhotos & JSXBase.HTMLAttributes<HTMLWtfPhotosElement>;
+            "wtf-reviews": LocalJSX.WtfReviews & JSXBase.HTMLAttributes<HTMLWtfReviewsElement>;
             "wtf-root": LocalJSX.WtfRoot & JSXBase.HTMLAttributes<HTMLWtfRootElement>;
             "wtf-youtube": LocalJSX.WtfYoutube & JSXBase.HTMLAttributes<HTMLWtfYoutubeElement>;
         }

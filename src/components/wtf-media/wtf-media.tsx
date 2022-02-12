@@ -1,4 +1,4 @@
-import { Component, h, Element, getAssetPath } from '@stencil/core';
+import { Component, h, Element } from '@stencil/core';
 
 @Component({
     tag: 'wtf-media',
@@ -36,7 +36,7 @@ export class WtfMedia {
                     <wtf-youtube videoId={id} onPlayerStart={this.onPlayerStart}></wtf-youtube>
                 ])}
                 <a target="_blank" href="https://open.spotify.com/album/6Si7za91K7HlhUsm1pewj1?si=eWeJUJGRR5aoQeynhI1qxg">
-                    <img src={getAssetPath(`/assets/img/albumcover.jpg`)} class="img-fluid" alt="What The Frnk" />
+                    <img src={`./assets/img/albumcover.jpg`} class="img-fluid" alt="What The Frnk" />
                 </a>
             </div>
         );

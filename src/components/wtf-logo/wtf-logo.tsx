@@ -1,4 +1,4 @@
-import { Component, getAssetPath, h } from '@stencil/core';
+import { Component, h } from '@stencil/core';
 
 @Component({
     tag: 'wtf-logo',
@@ -20,7 +20,7 @@ export class WtfLogo {
 
     getImage = () => {
         return (
-            <img src={getAssetPath(`/assets/img/main.jpg`)} class="img-fluid" alt="What The Frnk" />
+            <img src={`./assets/img/main.jpg`} class="img-fluid" alt="What The Frnk" />
         );
     }
 }

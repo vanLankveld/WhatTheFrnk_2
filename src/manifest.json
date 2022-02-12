@@ -1,7 +1,7 @@
 {
-  "name": "Stencil Starter",
-  "short_name": "Stencil",
-  "start_url": "/",
+  "name": "What the Frnk",
+  "short_name": "WTF",
+  "start_url": "/demo",
   "display": "standalone",
   "icons": [{
     "src": "assets/icon/icon.png",

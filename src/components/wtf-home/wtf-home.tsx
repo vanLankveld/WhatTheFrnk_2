@@ -1,4 +1,4 @@
-import { Component, getAssetPath, h } from '@stencil/core';
+import { Component, h } from '@stencil/core';
 
 @Component({
   tag: 'wtf-home',
@@ -17,9 +17,9 @@ export class WtfHome {
         <p>Sinds kort is de band voor de grotere podia ook te boeken met The <b>LongHorns</b>, een drie-koppige blazerssectie die de band nog n&egrave;t even wat extra's geeft.</p>
         <br />
         <div class="home-button-container">
-          <wtf-button newTab={true} buttonLink={"https://open.spotify.com/artist/2HklgMgtrhrEdQNdKEpmfn?si=96Y9jPECRoGCeXwkR6r5fQ"} textLeft={"Luister op Spotify"} iconUrl={getAssetPath("/assets/img/Spotify.svg")}></wtf-button>
+          <wtf-button newTab={true} buttonLink={"https://open.spotify.com/artist/2HklgMgtrhrEdQNdKEpmfn?si=96Y9jPECRoGCeXwkR6r5fQ"} textLeft={"Luister op Spotify"} iconUrl={"./assets/img/Spotify.svg"}></wtf-button>
           <br />
-          <wtf-button newTab={true} buttonLink={"https://www.youtube.com/channel/UCUgGXpBi52ataMhukfCd98A"} textLeft={"Bekijk op Youtube"} iconUrl={getAssetPath("/assets/img/Youtube.svg")}></wtf-button>
+          <wtf-button newTab={true} buttonLink={"https://www.youtube.com/channel/UCUgGXpBi52ataMhukfCd98A"} textLeft={"Bekijk op Youtube"} iconUrl={"./assets/img/Youtube.svg"}></wtf-button>
         </div>
       </div>
     ];

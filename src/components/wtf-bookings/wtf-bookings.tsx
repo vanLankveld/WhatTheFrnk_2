@@ -1,4 +1,4 @@
-import { Component, h, getAssetPath } from '@stencil/core';
+import { Component, h } from '@stencil/core';
 
 @Component({
     tag: 'wtf-bookings',
@@ -13,11 +13,11 @@ export class WtfMedia {
                     Wilt u meer weten over What The Frnk en de mogelijkheden m.b.t. boeken? Bel of mail info@monkeyman.nl
                 </p>
                 <div class="bookings-button-container">
-                    <wtf-button newTab={true} buttonLink={"https://monkeyman.nl"} textLeft={"Boekingen"} textRight="Monkeyman" iconUrl={getAssetPath("/assets/img/monkeyman.png")}></wtf-button>
+                    <wtf-button newTab={true} buttonLink={"https://monkeyman.nl"} textLeft={"Boekingen"} textRight="Monkeyman" iconUrl={"./assets/img/monkeyman.png"}></wtf-button>
                 </div>
                 <br/>
                 <br/>
-                <img data-goto="#home" src={getAssetPath(`/assets/img/logo.png`)} class="bookings-wtf-logo" alt="What The Frnk" />
+                <img data-goto="#home" src={`./assets/img/logo.png`} class="bookings-wtf-logo" alt="What The Frnk" />
             </div>
         );
     }

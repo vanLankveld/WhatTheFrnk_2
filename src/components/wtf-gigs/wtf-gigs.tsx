@@ -5,7 +5,7 @@ import { Gig, gigs } from './gigs';
     tag: 'wtf-gigs',
     styleUrl: 'wtf-gigs.less',
 })
-export class WtfReviews {
+export class WtfGigs {
     render = () => {
         return [
             <div class="container d-none d-md-block">
@@ -18,13 +18,13 @@ export class WtfReviews {
     }
 
     renderContents() {
-        let now = new Date();
+        let now = new Date().getTime();
         return (
             <div class="container gigs-container">
                 <h4>Agenda</h4>
                 {
                     gigs
-                        .filter(gig => gig.date >= now)
+                        .filter(gig => gig.date.getTime() >= now)
                         .map(gig =>
                             <p>
                                 <span class="gig-date" innerHTML={this.getDate(gig)}></span><br />

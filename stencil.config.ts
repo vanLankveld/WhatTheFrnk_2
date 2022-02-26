@@ -13,6 +13,9 @@ export const config: Config = {
       // comment the following line to disable service workers in production
       serviceWorker: null,
       baseUrl: 'https://whatthefrnk.nl/demo/',
+      copy: [
+        { src: '.htaccess' }
+      ]
     },
   ],
   plugins: [

@@ -14,7 +14,7 @@ export class Gig {
     }
 
     constructor(obj: any) {
-        this.date = new Date(`${obj.date} ${obj.time || ""}`.trim());
+        this.date = new Date(`${obj.date}${obj.time ? 'T' + obj.time : ""}`.trim());
         this.timeTba = !obj.time;
         this.city = obj.city;
         this.venue = obj.venue;

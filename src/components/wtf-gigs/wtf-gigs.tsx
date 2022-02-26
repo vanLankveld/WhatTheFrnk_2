@@ -18,33 +18,29 @@ export class WtfReviews {
     }
 
     renderContents() {
+        let now = new Date();
         return (
             <div class="container gigs-container">
                 <h4>Agenda</h4>
                 {
-                    gigs.map(gig =>
-                        <p>
-                            <span class="gig-date" innerHTML={this.getDate(gig)}></span><br />
-                            {this.getVenue(gig)} <span class="gig-city" innerHTML={gig.city}></span><br />
-                            {gig.time && 
-                            <span class="gig-time">Aanvang: <span innerHTML={gig.time}></span></span>
-                            }
-                        </p>
-                    )
+                    gigs
+                        .filter(gig => gig.date >= now)
+                        .map(gig =>
+                            <p>
+                                <span class="gig-date" innerHTML={this.getDate(gig)}></span><br />
+                                {this.getVenue(gig)} <span class="gig-city" innerHTML={gig.city}></span><br />
+                                {gig.time &&
+                                    <span class="gig-time">Aanvang: <span innerHTML={gig.time}></span></span>
+                                }
+                            </p>
+                        )
                 }
             </div>
         );
     }
 
     getDate = (gig: Gig) => {
-        let result: string;
-        try {
-            result = new Date(gig.date).toLocaleDateString("nl", { weekday: "short", year: "numeric", month: "long", day: "numeric" });
-        }
-        catch {
-            result = gig.date;
-        }
-        return result;
+        return gig.date.toLocaleDateString("nl", { weekday: "short", year: "numeric", month: "long", day: "numeric" });
     }
 
     getVenue = (gig: Gig) => {

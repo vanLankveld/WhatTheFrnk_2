@@ -21,15 +21,30 @@ export class AppRoot {
     this.mobileMenuOpen = false;
   }
 
+  componentDidLoad = () => {
+    //If the url contains a # to a section. Go there
+    let url = window.location.href;
+    let i = url.indexOf('#');
+    if (i != -1) {
+      let sectionHref = url.substring(i);
+      this.scrollTo(sectionHref);
+    }
+  }
+
   menuItemClicked = (e: Event) => {
     let target = e.target as HTMLElement;
     if (!target.getAttribute) {
       return;
     }
     let href = target.getAttribute('href') || target.getAttribute('data-goto');
+    this.scrollTo(href);
+    this.mobileMenuOpen = false;
+  }
+
+  scrollTo(href: string) {
     let linkParts = (href || "").split(':');
     let element
-    if (linkParts.length > 0 && linkParts[linkParts.length-1] == 'resp') {
+    if (linkParts.length > 0 && linkParts[linkParts.length - 1] == 'resp') {
       //try mobile and desktop
       let mobile = this.element.shadowRoot.querySelector(href.replace(':resp', "-mobile")) as HTMLElement;
       let desktop = this.element.shadowRoot.querySelector(href.replace(':resp', "-desktop")) as HTMLElement;
@@ -52,7 +67,6 @@ export class AppRoot {
     else {
       window.scrollTo(0, element.offsetTop);
     }
-    this.mobileMenuOpen = false;
   }
 
   renderMainMenu = () => {
@@ -69,11 +83,10 @@ export class AppRoot {
       </div>,
       <div class="col-lg-8 d-none d-lg-block">
         <div class="navbar-nav desktop-nav">
-          <a href="#media" onClick={this.menuItemClicked} class="nav-item nav-link">Media</a>
-          <a href="#bookings:resp" onClick={this.menuItemClicked} class="nav-item nav-link">Boekingen</a>
-          <a href="#longhorns" onClick={this.menuItemClicked} class="nav-item nav-link">The Longhorns</a>
-          <a href="#agenda" onClick={this.menuItemClicked} class="nav-item nav-link">Agenda</a>
-          <a href="#fotos" onClick={this.menuItemClicked} class="nav-item nav-link">Foto's</a>
+          {
+            this.renderCommonMenu()
+          }
+
           <a href="mailto:frank@monkeyman.nl" class="nav-item nav-link mail-nav"><img style={{ height: '1em' }} src={"assets/img/mail%20icon.svg"} /></a>
         </div>
       </div>,
@@ -83,12 +96,23 @@ export class AppRoot {
     ];
   }
 
+  renderCommonMenu = () => {
+    return [
+      <a href="#media" onClick={this.menuItemClicked} class="nav-item nav-link">Media</a>,
+      <a href="#bookings:resp" onClick={this.menuItemClicked} class="nav-item nav-link">Boekingen</a>,
+      <a href="#longhorns" onClick={this.menuItemClicked} class="nav-item nav-link">The Longhorns</a>,
+      <a href="#agenda" onClick={this.menuItemClicked} class="nav-item nav-link">Agenda</a>,
+      <a href="#fotos" onClick={this.menuItemClicked} class="nav-item nav-link">Foto's</a>,
+      <a href="https://www.dropbox.com/sh/abyrvlmcly44itn/AACmb2Uw_y6bnRerGdwl591Ma?dl=0" target="_blank" class="nav-item nav-link">Rider &amp; Presskit</a>
+    ];
+  }
+
   render = () => {
     return [
       <header class="main-header">
         <div class="container">
           <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
-            { this.renderMainMenu() }
+            {this.renderMainMenu()}
           </nav>
         </div>
       </header>,
@@ -110,11 +134,9 @@ export class AppRoot {
             <div class="col-12">
               <div>
                 <div class="navbar-nav">
-                  <a href="#media" onClick={this.menuItemClicked} class="nav-item nav-link">Media</a>
-                  <a href="#bookings:resp" onClick={this.menuItemClicked} class="nav-item nav-link">Boekingen</a>
-                  <a href="#longhorns" onClick={this.menuItemClicked} class="nav-item nav-link">The Longhorns</a>
-                  <a href="#agenda" onClick={this.menuItemClicked} class="nav-item nav-link">Agenda</a>
-                  <a href="#fotos" onClick={this.menuItemClicked} class="nav-item nav-link">Foto's</a>
+                  {
+                    this.renderCommonMenu()
+                  }
                 </div>
               </div>
             </div>

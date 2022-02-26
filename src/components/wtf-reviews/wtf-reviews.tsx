@@ -30,18 +30,18 @@ export class WtfReviews {
                 </p>
                 <p class="review-p">
                     "Een mooi, gevarieerd en sterk debuutalbum."<br/>
-                    (Realrootscafé magazine)
+                    (Realrootscaf&eacute; magazine)
                 </p>
                 <p class="review-p">
                     "Een oerdegelijke band met dito sound."<br/>
-                    (Dé Blueskrant)
+                    (D&eacute; Blueskrant)
                 </p>
                 <p class="review-p">
                     "Een lekkere scheurende gitaar, fijn Hammond-orgelspel, mooi pianowerk en een uitstekende ritmesectie."<br/>
                     (Musicmaker)
                 </p>
                 <p class="review-p">
-                    "Deze fnuikende blusrockers hebben er een flink pak noeste arbeid in zitten en dàt hoor je!"<br/>
+                    "Deze funkende blusrockers hebben er een flink pak noeste arbeid in zitten en d&agrave;t hoor je!"<br/>
                     (Popei maandblad)
                 </p>
             </div>

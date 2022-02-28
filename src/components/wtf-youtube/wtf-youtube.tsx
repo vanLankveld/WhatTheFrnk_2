@@ -1,5 +1,7 @@
 import { Component, Prop, h, Event, EventEmitter, Element, Method } from '@stencil/core';
-import { load as ytLoad } from 'youtube-iframe';
+import { loadScript, youtubePromise } from '../../util/util';
+
+declare const YT: any;
 
 @Component({
     tag: 'wtf-youtube',
@@ -17,6 +19,8 @@ export class Youtube {
 
     player: any;
 
+    loadPromise: Promise<void>
+
     @Method()
     play() {
         this.player.playVideo();
@@ -24,7 +28,7 @@ export class Youtube {
 
     @Method()
     pause() {
-       this.player.stopVideo();
+        this.player.stopVideo();
     }
 
     onPlayerStateChange = (e) => {
@@ -43,21 +47,29 @@ export class Youtube {
         this.playerReady.emit(e);
     }
 
-    componentDidLoad = () => {
-        let div = this.element.querySelector('.video');
-        ytLoad(YT => {
-            this.player = new YT.Player(div, {
-                videoId: this.videoId,
-                playerVars: {
-                    'playsinline': 1
-                },
-                events: {
-                    'onReady': this.onPlayerReady,
-                    'onStateChange': this.onPlayerStateChange
-                }
-            });
+    onPlayerError = (e) => {
+        console.error(e);
+    }
 
-        })
+    componentWillLoad = () => {
+        this.loadPromise = loadScript("https://www.youtube.com/iframe_api");
+    }
+
+    componentDidLoad = async () => {
+        await this.loadPromise;
+        await youtubePromise;
+        let div = this.element.querySelector('.video');
+        this.player = new YT.Player(div, {
+            videoId: this.videoId,
+            playerVars: {
+                'playsinline': 1
+            },
+            events: {
+                'onReady': this.onPlayerReady,
+                'onStateChange': this.onPlayerStateChange,
+                'onError': this.onPlayerError
+            }
+        });
     }
 
     render = () => {

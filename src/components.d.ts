@@ -30,6 +30,7 @@ export namespace Components {
     interface WtfReviews {
     }
     interface WtfRoot {
+        "youTubeIframeAPIReady": () => Promise<void>;
     }
     interface WtfYoutube {
         "pause": () => Promise<void>;

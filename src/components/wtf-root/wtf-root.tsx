@@ -1,5 +1,6 @@
-import { Component, Element, h, State } from '@stencil/core';
+import { Component, Element, h, Method, State } from '@stencil/core';
 import '@adamlacombe/fa-icon';
+import { youtubeResolve } from '../../util/util';
 
 @Component({
   tag: 'wtf-root',
@@ -19,6 +20,12 @@ export class AppRoot {
 
   closeMenu = () => {
     this.mobileMenuOpen = false;
+  }
+
+  @Method()
+  youTubeIframeAPIReady() {
+    youtubeResolve();
+    return Promise.resolve();
   }
 
   componentDidLoad = () => {

@@ -20,7 +20,12 @@
 </head>
 <body>
 
-  <wtf-root></wtf-root>
+  <wtf-root id="wtf-root-elm"></wtf-root>
 
+  <script>
+    function onYouTubeIframeAPIReady() {
+      document.getElementById('wtf-root-elm').youTubeIframeAPIReady();
+    }
+  </script>
 </body>
 </html>

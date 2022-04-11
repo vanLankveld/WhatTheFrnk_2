@@ -31,6 +31,10 @@ export var gigs: Gig[] = [
     new Gig({ date: '2022-03-04', city: 'Dordrecht', time: '21:30', venue: 'DJS', website: 'https://www.muziekpodiumdjs.nl/' }),
     new Gig({ date: '2022-04-17', city: 'Bergen', venue: 'Taverne', website: 'https://www.tavernebergen.nl/' }),
     new Gig({ date: '2022-11-11', city: 'Rindern (DE)', venue: 'Culucu Bar', website: 'http://www.culucubar.de/' }),
+    new Gig({ date: '2022-04-23', city: 'Helmond', venue: 'Cacaofabriek', website: 'https://cacaofabriek.nl/' }),
+    new Gig({ date: '2022-04-29', city: 'Panningen', venue: 'Caf&eacute; tinus', website: 'https://goedtoeven.nl/' }),
+    new Gig({ date: '2022-06-26', city: '\'s-Hertogenbosch', venue: 'Muziekcaf&eacute; het Warm Onthaal' }),
+    new Gig({ date: '2022-05-13', city: 'Apeldoorn', venue: 'Bluescaf&eacute;', website: 'http://www.bluescafe.nl' }),
 ]
 
 gigs.sort((a, b) => {

@@ -29,6 +29,8 @@ export namespace Components {
     }
     interface WtfReviews {
     }
+    interface WtfRiderPresskit {
+    }
     interface WtfRoot {
         "youTubeIframeAPIReady": () => Promise<void>;
     }
@@ -93,6 +95,12 @@ declare global {
         prototype: HTMLWtfReviewsElement;
         new (): HTMLWtfReviewsElement;
     };
+    interface HTMLWtfRiderPresskitElement extends Components.WtfRiderPresskit, HTMLStencilElement {
+    }
+    var HTMLWtfRiderPresskitElement: {
+        prototype: HTMLWtfRiderPresskitElement;
+        new (): HTMLWtfRiderPresskitElement;
+    };
     interface HTMLWtfRootElement extends Components.WtfRoot, HTMLStencilElement {
     }
     var HTMLWtfRootElement: {
@@ -115,6 +123,7 @@ declare global {
         "wtf-media": HTMLWtfMediaElement;
         "wtf-photos": HTMLWtfPhotosElement;
         "wtf-reviews": HTMLWtfReviewsElement;
+        "wtf-rider-presskit": HTMLWtfRiderPresskitElement;
         "wtf-root": HTMLWtfRootElement;
         "wtf-youtube": HTMLWtfYoutubeElement;
     }
@@ -143,6 +152,8 @@ declare namespace LocalJSX {
     }
     interface WtfReviews {
     }
+    interface WtfRiderPresskit {
+    }
     interface WtfRoot {
     }
     interface WtfYoutube {
@@ -161,6 +172,7 @@ declare namespace LocalJSX {
         "wtf-media": WtfMedia;
         "wtf-photos": WtfPhotos;
         "wtf-reviews": WtfReviews;
+        "wtf-rider-presskit": WtfRiderPresskit;
         "wtf-root": WtfRoot;
         "wtf-youtube": WtfYoutube;
     }
@@ -178,6 +190,7 @@ declare module "@stencil/core" {
             "wtf-media": LocalJSX.WtfMedia & JSXBase.HTMLAttributes<HTMLWtfMediaElement>;
             "wtf-photos": LocalJSX.WtfPhotos & JSXBase.HTMLAttributes<HTMLWtfPhotosElement>;
             "wtf-reviews": LocalJSX.WtfReviews & JSXBase.HTMLAttributes<HTMLWtfReviewsElement>;
+            "wtf-rider-presskit": LocalJSX.WtfRiderPresskit & JSXBase.HTMLAttributes<HTMLWtfRiderPresskitElement>;
             "wtf-root": LocalJSX.WtfRoot & JSXBase.HTMLAttributes<HTMLWtfRootElement>;
             "wtf-youtube": LocalJSX.WtfYoutube & JSXBase.HTMLAttributes<HTMLWtfYoutubeElement>;
         }

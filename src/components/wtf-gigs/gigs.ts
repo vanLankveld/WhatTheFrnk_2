@@ -30,11 +30,20 @@ export var gigs: Gig[] = [
     new Gig({ date: '2022-09-03', city: 'Tegelen', venue: 'Bluesrock Festival', website: 'https://www.bluesrockfestival.nl/' }),
     new Gig({ date: '2022-03-04', city: 'Dordrecht', time: '21:30', venue: 'DJS', website: 'https://www.muziekpodiumdjs.nl/' }),
     new Gig({ date: '2022-04-17', city: 'Bergen', venue: 'Taverne', website: 'https://www.tavernebergen.nl/' }),
-    new Gig({ date: '2022-11-11', city: 'Rindern (DE)', venue: 'Culucu Bar', website: 'http://www.culucubar.de/' }),
+    new Gig({ date: '2022-11-05', city: 'Rindern (DE)', venue: 'Culucu Bar', website: 'http://www.culucubar.de/' }),
     new Gig({ date: '2022-04-23', city: 'Helmond', venue: 'Cacaofabriek', website: 'https://cacaofabriek.nl/' }),
     new Gig({ date: '2022-04-29', city: 'Panningen', venue: 'Caf&eacute; tinus', website: 'https://goedtoeven.nl/' }),
     new Gig({ date: '2022-06-26', city: '\'s-Hertogenbosch', venue: 'Muziekcaf&eacute; het Warm Onthaal' }),
     new Gig({ date: '2022-05-13', city: 'Apeldoorn', venue: 'Bluescaf&eacute;', website: 'http://www.bluescafe.nl' }),
+    new Gig({ date: '2022-05-25', city: 'Amsterdam', venue: 'Rollende Keukens', website: 'https://rollendekeukens.amsterdam' }),
+    new Gig({ date: '2022-05-27', city: 'Breda', time: '23:00', venue: 'Breda Jazz', website: 'https://www.bredajazzfestival.nl/' }),
+    new Gig({ date: '2022-10-14', city: 'Texel', venue: 'Texel Blues', website: 'https://www.texelblues.nl/' }),
+    new Gig({ date: '2022-10-15', city: 'Texel', venue: 'Texel Blues', website: 'https://www.texelblues.nl/' }),
+    new Gig({ date: '2022-09-11', city: 'Gorssel', venue: 'IJssel Jazz', time: '16:30', website: 'https://www.ijsseljazz.nl' }),
+    new Gig({ date: '2022-10-30', city: 'Groningen', venue: 'Meziek mit bus' }),
+    new Gig({ date: '2022-06-24', city: 'Rotterdam', venue: 'Hilligersberg jazz', website: 'https://www.jazzhillegersberg.nl/' }),
+    new Gig({ date: '2022-09-09', city: 'Oldenzaal', venue: 'Oldenzaal Muzikaal', website: 'https://oldenzaalmuzikaal.nl/' }),
+    new Gig({ date: '2022-10-29', city: 'Helmond', venue: 'Bluesroute', time: '16:00', website: 'https://www.bluesroutehelmond.nl/' }),
 ]
 
 gigs.sort((a, b) => {

@@ -26,7 +26,7 @@ export class WtfLonghorns {
                 <p>
                     Iedereen wil ze, What The Frnk heeft ze! Wat begon als een experiment in de studio vormde de basis van een mooie samenwerking. Sinds kort is de band voor de grotere podia ook te boeken met deze drie-eenheid. Een blazerssectie van formaat die de band nog n&egrave;t even wat extra’s geeft.
                 </p>
-                <wtf-youtube videoId={"GAerb6fVwlQ"}></wtf-youtube>
+                <wtf-youtube videoId={"JqhWogFl7-A"}></wtf-youtube>
                 <br />
                 <br />
             </div>

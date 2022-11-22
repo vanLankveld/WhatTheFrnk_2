@@ -18,7 +18,9 @@ export class WtfButton {
         {this.textLeft &&
           <span class="wtf-button-text" innerHTML={this.textLeft}></span>
         }
-        <img src={this.iconUrl} />
+        {this.iconUrl &&
+          <img src={this.iconUrl} />
+        }
         {this.textRight &&
           <span class="wtf-button-text" innerHTML={this.textRight}></span>
         }

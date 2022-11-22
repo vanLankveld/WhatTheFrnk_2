@@ -110,7 +110,7 @@ export class AppRoot {
       <a href="#longhorns" onClick={this.menuItemClicked} class="nav-item nav-link">The Longhorns</a>,
       <a href="#agenda" onClick={this.menuItemClicked} class="nav-item nav-link">Agenda</a>,
       <a href="#fotos" onClick={this.menuItemClicked} class="nav-item nav-link">Foto's</a>,
-      <a href="https://www.dropbox.com/sh/abyrvlmcly44itn/AACmb2Uw_y6bnRerGdwl591Ma?dl=0" target="_blank" class="nav-item nav-link">Rider &amp; Presskit</a>
+      <a href="#riders" onClick={this.menuItemClicked} class="nav-item nav-link">Rider &amp; Presskit</a>
     ];
   }
 
@@ -185,15 +185,9 @@ export class AppRoot {
           <section id="fotos" class="can-scroll-to">
             <wtf-photos></wtf-photos>
           </section>
-          {
-            /*<stencil-router>
-              <stencil-route-switch scrollTopOffset={0}>
-                <stencil-route url="/" component="app-home" exact={true} />
-                <stencil-route url="/profile/:name" component="app-profile" />
-              </stencil-route-switch>
-            </stencil-router>
-            */
-          }
+          <section id="riders" class="can-scroll-to">
+            <wtf-rider-presskit></wtf-rider-presskit>
+          </section>
         </main>
       </div>
     ];

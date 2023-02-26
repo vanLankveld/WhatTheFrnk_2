@@ -44,6 +44,13 @@ export var gigs: Gig[] = [
     new Gig({ date: '2022-06-24', city: 'Rotterdam', venue: 'Hilligersberg jazz', website: 'https://www.jazzhillegersberg.nl/' }),
     new Gig({ date: '2022-09-09', city: 'Oldenzaal', venue: 'Oldenzaal Muzikaal', website: 'https://oldenzaalmuzikaal.nl/' }),
     new Gig({ date: '2022-10-29', city: 'Helmond', venue: 'Bluesroute', time: '16:00', website: 'https://www.bluesroutehelmond.nl/' }),
+
+    new Gig({ date: '2023-02-12', city: 'Roermond', venue: 'Den Heilige Cornelius', website: 'https://www.denheiligecornelius.nl/' }),
+    new Gig({ date: '2023-03-03', city: 'Hengelo', venue: 'De Cactus', time: '20:30', website: 'https://www.decactus.nl/' }),
+    new Gig({ date: '2023-04-08', city: 'Asten', venue: 'Paasblues' }),
+    new Gig({ date: '2023-06-03', city: 'Zoetermeer', venue: 'Zoetermeer Blues', website: 'https://zoetermeer-blues.nl/' }),
+    new Gig({ date: '2023-07-01', city: 'Hillegersberg', venue: 'Jazzfestival Hillegersberg', website: 'https://www.jazzhillegersberg.nl/' }),
+    new Gig({ date: '2023-07-16', city: 'Blerick', venue: 'TBA' }),
 ]
 
 gigs.sort((a, b) => {

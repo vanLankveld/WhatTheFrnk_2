@@ -10,7 +10,25 @@ wtf-reviews {
         background-color: @box-color-medium;
 
         .review-p {
+
+            blockquote {
+                font-size: 2em;
+                font-weight: 600;
+                margin-top: 0.5em;
+            }
+
             font-style: italic;
+
+            &:not(:last-child) {
+                border-bottom: 1px solid #fff;
+            }
+
+            margin-bottom: 0;
+            padding: 0.6em 0;
         }
+    }
+
+    .wtf-review-read-more {
+        cursor: pointer;
     }
 }

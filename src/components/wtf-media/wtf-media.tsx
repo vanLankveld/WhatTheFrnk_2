@@ -9,9 +9,9 @@ export class WtfMedia {
     @Element() element: HTMLElement;
 
     videos = [
+        "NFFEIvoQfxU",
         "JqhWogFl7-A",
-        "jO3Xqk6c3Qo",
-        "K15oQoYuogY"
+        "jO3Xqk6c3Qo"
     ]
 
     get players() {

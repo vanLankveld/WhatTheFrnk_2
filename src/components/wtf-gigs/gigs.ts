@@ -47,10 +47,17 @@ export var gigs: Gig[] = [
 
     new Gig({ date: '2023-02-12', city: 'Roermond', venue: 'Den Heilige Cornelius', website: 'https://www.denheiligecornelius.nl/' }),
     new Gig({ date: '2023-03-03', city: 'Hengelo', venue: 'De Cactus', time: '20:30', website: 'https://www.decactus.nl/' }),
+    new Gig({ date: '2023-03-12', city: 'Gemert', venue: 'Gij & Ik', time: "16:30", website: 'https://gijenik.nl/' }),
+    new Gig({ date: '2023-03-19', city: 'Eindhoven', venue: 'Caf&eacute; Wilhelmina', time: "17:00", website: 'https://www.cafewilhelmina.nl/' }),
+    new Gig({ date: '2023-04-02', city: 'Ede', venue: 'De Compaen', website: 'https://www.cafedecompaen.nl/' }),
     new Gig({ date: '2023-04-08', city: 'Asten', venue: 'Paasblues' }),
-    new Gig({ date: '2023-06-03', city: 'Zoetermeer', venue: 'Zoetermeer Blues', website: 'https://zoetermeer-blues.nl/' }),
+    new Gig({ date: '2023-04-27', city: 'Bergeijk', venue: 'Markt Pleinfesteijn' }),
+    new Gig({ date: '2023-05-17', city: 'Amsterdam', venue: 'Rollende Keukens', website: 'https://rollendekeukens.amsterdam/' }),
+    new Gig({ date: '2023-06-03', city: 'Zoetermeer', venue: 'Zoetermeer Blues', time: "17:50", website: 'https://zoetermeer-blues.nl/' }),
+    new Gig({ date: '2023-06-11', city: 'Veghel', venue: 'De Afzakkerij', website: 'https://www.afzakkerij.nl/' }),
     new Gig({ date: '2023-07-01', city: 'Hillegersberg', venue: 'Jazzfestival Hillegersberg', website: 'https://www.jazzhillegersberg.nl/' }),
-    new Gig({ date: '2023-07-16', city: 'Blerick', venue: 'TBA' }),
+    new Gig({ date: '2023-07-01', city: 'Lochem', venue: 'Blues rond de Kerk', time: "21:00", website: 'https://www.facebook.com/BluesRondDeKerk/' }),
+    new Gig({ date: '2023-07-16', city: 'Blerick', time: "18:00", venue: 'Bli&euml;rock', website: "https://www.stichtingb4music.nl/blierock" }),
 ]
 
 gigs.sort((a, b) => {

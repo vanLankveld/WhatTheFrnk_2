@@ -93,7 +93,6 @@ export class AppRoot {
           {
             this.renderCommonMenu()
           }
-
           <a href="mailto:frank@monkeyman.nl" class="nav-item nav-link mail-nav"><img style={{ height: '1em' }} src={"assets/img/mail%20icon.svg"} /></a>
         </div>
       </div>,
@@ -107,7 +106,6 @@ export class AppRoot {
     return [
       <a href="#media" onClick={this.menuItemClicked} class="nav-item nav-link">Media</a>,
       <a href="#bookings:resp" onClick={this.menuItemClicked} class="nav-item nav-link">Boekingen</a>,
-      <a href="#longhorns" onClick={this.menuItemClicked} class="nav-item nav-link">The Longhorns</a>,
       <a href="#agenda" onClick={this.menuItemClicked} class="nav-item nav-link">Agenda</a>,
       <a href="#fotos" onClick={this.menuItemClicked} class="nav-item nav-link">Foto's</a>,
       <a href="#riders" onClick={this.menuItemClicked} class="nav-item nav-link">Rider &amp; Presskit</a>
@@ -173,9 +171,6 @@ export class AppRoot {
               </section>
             </div>
           </div>
-          <section id="longhorns" class='can-scroll-to no-margin-bot'>
-            <wtf-longhorns></wtf-longhorns>
-          </section>
           <section id="reviews" class="can-scroll-to">
             <wtf-reviews></wtf-reviews>
           </section>

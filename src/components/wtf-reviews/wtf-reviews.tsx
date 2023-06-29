@@ -28,7 +28,7 @@ export class WtfReviews {
             <div class="container reviews-container">
                 <p class="review-p">
                     <span>Bleusmagazine Bluesrock Tegelen</span>
-                    <blockquote>"Een verrassing deze Nederlandse band die met hun optreden er voor zorgde dat de sfeer er gelijk goed in zat"</blockquote>
+                    <blockquote>"Een verrassing deze Nederlandse band."</blockquote>
                     {!this.topReviewOpen && [
                         <span class="wtf-review-read-more" onClick={this.readMoreClicked}>Lees recensie &gt;</span>,
                         <br/>,
@@ -41,7 +41,7 @@ export class WtfReviews {
                     }
                 </p>
                 <p class="review-p">
-                    "Nederland heeft er weer een prima bluesband bij."<br />
+                    "Nederland heeft er weer een prima band bij."<br />
                     (Blues Town Music)
                 </p>
                 <p class="review-p">
@@ -53,7 +53,7 @@ export class WtfReviews {
                     (D&eacute; Blueskrant)
                 </p>
                 <p class="review-p">
-                    "Een lekkere scheurende gitaar, fijn Hammond-orgelspel, mooi pianowerk en een uitstekende ritmesectie."<br />
+                    "Een lekkere scheurende gitaar, fijn Hammondorgel, mooi pianowerk en een uitstekende ritmesectie."<br />
                     (Musicmaker)
                 </p>
             </div>

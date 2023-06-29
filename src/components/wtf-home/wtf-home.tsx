@@ -10,15 +10,10 @@ export class WtfHome {
   render = () => {
     return [
       <div>
-        <h4 class="wtf-title">What the Frnk</h4>
-
-        <p>Van ingetogen groot naar keihard klein. Een echte live band voor elk zichzelf respecterende kroeg of festival. Lekkere grooves en funky solo&rsquo;s op Hammond en messcherpe gitaarriffs van gitarist en zanger Frank Schurgers geven de band een herkenbare, eigen sound.</p>
-
-        <p>Frank weet met zijn uitgelaten performance het publiek keer op keer op zijn hand te krijgen. Naast Frank op gitaar bestaat de band uit Guus van Lankveld op Rhodes en Hammond, Twan van hoof op basgitaar en Too Pierik op drums.<br />
-          What the Frnk, een lekkere live band voor elk zichzelf respecterende kroeg of festival.</p>
-
-        <p>En mocht je willen dan is What the Frnk te boeken met &ldquo;The Longhorns&rdquo;. Een blazerssectie van formaat die de band nog n&egrave;t even wat extra&rsquo;s geeft.</p>
-        <p><i>&ldquo;Good vibes in tha house&rdquo;</i></p>
+        <p>What the Frnk. Van ingetogen groot naar keihard klein. Een herkenbare eigen sound, overtuigend gebracht. Dat is What the Frnk. Live zijn ze op hun best, in leuke kroegen en op festivals, als er maar een professioneel podium onder zit.</p>
+        <p>Frank Schurgers (gitaar) en degene die uitgelaten en solerend voorop staat. Maar daaromheen staat minstens zoveel muzikale en ritmische energie. Guus van Lankveld op Rhodes en Hammond, Twan van Hoof speelt basgitaar en Too Pierik zit achter de drums.</p>
+        <p>De blazerssectie is een welkome aanvulling, een frisse wind er doorheen. “The Longhorns” zijn optioneel bij te boeken. What the Frnk, een lekkere live band voor elk zichzelf respecterende kroeg of festival.</p>
+        <p>Oordeel, luister en beweeg zelf.</p>
         <br />
         <div class="home-button-container">
           <wtf-button newTab={true} buttonLink={"https://open.spotify.com/artist/2HklgMgtrhrEdQNdKEpmfn?si=96Y9jPECRoGCeXwkR6r5fQ"} textLeft={"Luister op Spotify"} iconUrl={"./assets/img/Spotify.svg"}></wtf-button>

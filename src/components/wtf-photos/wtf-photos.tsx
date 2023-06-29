@@ -22,13 +22,17 @@ export class WtfPhotos {
             <img src={`assets/img/photos/1.jpg`} class="img-fluid wtf-photo" alt="Foto" />,
             <img src={`assets/img/photos/2.jpg`} class="img-fluid wtf-photo" alt="Foto" />,
             <img src={`assets/img/photos/3.jpg`} class="img-fluid wtf-photo" alt="Foto" />,
-            <img src={`assets/img/photos/4.png`} class="img-fluid wtf-photo" alt="Foto" />,
+            <img src={`assets/img/photos/4.jpg`} class="img-fluid wtf-photo" alt="Foto" />,
             <img src={`assets/img/photos/5.jpg`} class="img-fluid wtf-photo" alt="Foto" />,
             <img src={`assets/img/photos/6.png`} class="img-fluid wtf-photo" alt="Foto" />,
             <img src={`assets/img/photos/7.png`} class="img-fluid wtf-photo" alt="Foto" />,
+            <img src={`assets/img/photos/7a.jpg`} class="img-fluid wtf-photo" alt="Foto" />,
             <img src={`assets/img/photos/8.jpg`} class="img-fluid wtf-photo" alt="Foto" />,
             <img src={`assets/img/photos/9.jpg`} class="img-fluid wtf-photo" alt="Foto" />,
             <img src={`assets/img/photos/10.png`} class="img-fluid wtf-photo" alt="Foto" />,
+            <img src={`assets/img/photos/11.jpg`} class="img-fluid wtf-photo" alt="Foto" />,
+            <img src={`assets/img/photos/12.jpg`} class="img-fluid wtf-photo" alt="Foto" />,
+            <img src={`assets/img/photos/13.jpg`} class="img-fluid wtf-photo" alt="Foto" />,
         ];
     }
 }

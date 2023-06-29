@@ -183,6 +183,13 @@ export class AppRoot {
           <section id="riders" class="can-scroll-to">
             <wtf-rider-presskit></wtf-rider-presskit>
           </section>
+          <section id="bookings-repeat" class="col-12">
+            <div class="container">
+              <div class="row">
+                <wtf-bookings></wtf-bookings>
+              </div>
+            </div>
+          </section>
         </main>
       </div>
     ];

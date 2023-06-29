@@ -10,8 +10,10 @@ export class WtfMedia {
 
     videos = [
         "NFFEIvoQfxU",
+        "ffiERFP7XSg",
         "JqhWogFl7-A",
-        "jO3Xqk6c3Qo"
+        "lXnXEi-HqTw",
+        "jO3Xqk6c3Qo",
     ]
 
     get players() {

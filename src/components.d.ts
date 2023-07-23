@@ -7,6 +7,7 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface WtfBookings {
+        "showLogo": boolean;
     }
     interface WtfButton {
         "buttonLink": string;
@@ -130,6 +131,7 @@ declare global {
 }
 declare namespace LocalJSX {
     interface WtfBookings {
+        "showLogo"?: boolean;
     }
     interface WtfButton {
         "buttonLink"?: string;

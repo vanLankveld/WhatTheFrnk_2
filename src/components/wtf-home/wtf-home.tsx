@@ -11,7 +11,7 @@ export class WtfHome {
     return [
       <div>
         <p>What the Frnk. Van ingetogen groot naar keihard klein. Een herkenbare eigen sound, overtuigend gebracht. Dat is What the Frnk. Live zijn ze op hun best, in leuke kroegen en op festivals, als er maar een professioneel podium onder zit.</p>
-        <p>Frank Schurgers (gitaar) en degene die uitgelaten en solerend voorop staat. Maar daaromheen staat minstens zoveel muzikale en ritmische energie. Guus van Lankveld op Rhodes en Hammond, Twan van Hoof speelt basgitaar en Too Pierik zit achter de drums.</p>
+        <p>Frank Schurgers (gitaar en vocals) is degene die uitgelaten en solerend voorop staat. Maar daaromheen staat minstens zoveel muzikale en ritmische energie. Guus van Lankveld op Rhodes en Hammond, Twan van Hoof speelt basgitaar en Too Pierik zit achter de drums.</p>
         <p>De blazerssectie is een welkome aanvulling, een frisse wind er doorheen. “The Longhorns” zijn optioneel bij te boeken. What the Frnk, een lekkere live band voor elk zichzelf respecterende kroeg of festival.</p>
         <p>Oordeel, luister en beweeg zelf.</p>
         <br />

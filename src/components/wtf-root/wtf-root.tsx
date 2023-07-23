@@ -160,7 +160,7 @@ export class AppRoot {
                 <wtf-home></wtf-home>
                 <section id="bookings-desktop" class="d-none d-md-block can-scroll-to">
                   <br />
-                  <wtf-bookings></wtf-bookings>
+                  <wtf-bookings showLogo={false}></wtf-bookings>
                 </section>
               </section>
               <section id="media" class="col-12 col-md-5 can-scroll-to">

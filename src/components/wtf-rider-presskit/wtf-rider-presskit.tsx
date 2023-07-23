@@ -10,7 +10,7 @@ export class WtfPhotos {
             <div class="container d-none d-md-block">
                 {this.renderContents()}
             </div>,
-            <div class="d-md-none rider-presskit-container">
+            <div class="container d-md-none rider-presskit-container">
                 {this.renderContents()}
             </div>
         ];
@@ -18,7 +18,7 @@ export class WtfPhotos {
 
     renderContents() {
         return [
-            <div class="container"><h4>Rider &amp; Presskit</h4></div>,
+            <h4>Rider &amp; Presskit</h4>,
             <div class="riders-button-container">
                 <div class="row">
                     <div class="col-12 col-md-3"><wtf-button newTab={true} buttonLink={"https://www.dropbox.com/sh/35394fphqbcskrb/AADd276V5XhCRx-J2aNraKhOa?dl=0"} textLeft={"Presskit"}></wtf-button></div>

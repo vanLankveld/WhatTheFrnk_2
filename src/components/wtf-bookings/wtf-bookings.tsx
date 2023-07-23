@@ -1,10 +1,13 @@
-import { Component, h } from '@stencil/core';
+import { Component, Prop, h } from '@stencil/core';
 
 @Component({
     tag: 'wtf-bookings',
     styleUrl: 'wtf-bookings.less',
 })
 export class WtfMedia {
+
+    @Prop() showLogo: boolean = true;
+
     render = () => {
         return (
             <div>
@@ -19,7 +22,9 @@ export class WtfMedia {
                 </p>
                 <br/>
                 <br/>
-                <img data-goto="#home" src={`./assets/img/logo.png`} class="bookings-wtf-logo" alt="What The Frnk" />
+                {this.showLogo &&
+                    <img data-goto="#home" src={`./assets/img/logo.png`} class="bookings-wtf-logo" alt="What The Frnk" />
+                }
             </div>
         );
     }

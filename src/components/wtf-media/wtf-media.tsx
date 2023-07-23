@@ -11,6 +11,7 @@ export class WtfMedia {
     videos = [
         "NFFEIvoQfxU",
         "ffiERFP7XSg",
+        "9WYQOWhv6Z8",
         "JqhWogFl7-A",
         "lXnXEi-HqTw",
         "jO3Xqk6c3Qo",

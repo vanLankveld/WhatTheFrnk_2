@@ -58,7 +58,7 @@ export var gigs: Gig[] = [
     new Gig({ date: '2023-07-01', city: 'Lochem', venue: 'Blues rond de Kerk', time: "21:00", website: 'https://www.facebook.com/BluesRondDeKerk/' }),
     new Gig({ date: '2023-07-16', city: 'Blerick', time: "18:00", venue: 'Bli&euml;rock', website: "https://www.stichtingb4music.nl/blierock" }),
     new Gig({ date: '2023-10-28', city: 'Gemert', time: "20:00", venue: 'De Bunker', website: "https://www.bunkergemert.nl/" }),
-    new Gig({ date: '2023-12-12', city: 'Zwolle', venue: 'Hedon', website: "https://www.hedon-zwolle.nl/" }),
+    new Gig({ date: '2023-12-19', city: 'Zwolle', venue: 'Hedon', website: "https://www.hedon-zwolle.nl/" }),
     new Gig({ date: '2023-10-01', city: 'Alkmaar', venue: 'Eetcaf&eacute; Pluim', time: "17:00", website: "https://www.eetcafepluim.nl/" }),
     new Gig({ date: '2023-10-07', city: 'Brugge', venue: '27b Flat', website: "https://www.27bflat.be/nl/" }),
     new Gig({ date: '2023-10-08', city: 'Nieuw Vennep', venue: 'Finale Dutch Blues Challenge', website: "https://www.dutchbluesfoundation.nl/dutch-blues-challenge" }),

@@ -14,7 +14,8 @@ export const config: Config = {
       serviceWorker: null,
       baseUrl: 'https://whatthefrnk.nl/',
       copy: [
-        { src: '.htaccess' }
+        { src: '.htaccess' },
+        { src: 'subscribe.php' },
       ]
     },
   ],

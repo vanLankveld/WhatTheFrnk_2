@@ -9,7 +9,7 @@ export class WtfMedia {
     @Element() element: HTMLElement;
 
     videos = [
-        "NFFEIvoQfxU",
+        "bfVfDqBMUHk?si=5-7QXwgN_Bzo_8h0",
         "ffiERFP7XSg",
         "9WYQOWhv6Z8",
         "JqhWogFl7-A",

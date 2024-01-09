@@ -65,7 +65,6 @@ export var gigs: Gig[] = [
     new Gig({ date: '2023-10-15', city: 'Bergeijk', venue: 'Kempen TV', website: "https://www.kempentv.nl/" }),
     new Gig({ date: '2024-01-27', city: 'Assen', venue: 'Asser Bluesdagen', website: "https://bluesassen.nl/" }),
     new Gig({ date: '2024-02-24', city: 'Delft', time: '15:00', venue: 'Bluesfestival Delft', website: "https://www.delftblues.nl/" }),
-    new Gig({ date: '2024-04-19', city: 'Bielefeld (DE)', time: "20:30", venue: 'Bielefelder JazzClub', website: "https://www.bielefelder-jazzclub.de/" }),
     new Gig({ date: '2024-05-10', city: 'Breda', venue: 'Breda Jazz', website: "https://www.bredajazzfestival.nl/" }),
     new Gig({ date: '2024-06-01', city: 'Kranenburg (DE)', venue: 'Zyfflich blues festival', website: "https://festivalinzyfflich.de/" }),
     new Gig({ date: '2024-06-30', city: 'Luyksgestel', venue: 'Openluchttheater De Hunnebergen', website: "https://www.hunnebergen.com/" }),

@@ -25,15 +25,16 @@ export class WtfGigs {
                 <h4>Agenda</h4>
                 {upcomingGigs.length > 0 &&
                     upcomingGigs
-                    .map(gig =>
-                        <p>
-                            <span class="gig-date" innerHTML={this.getDate(gig)}></span><br />
-                            {this.getVenue(gig)} <span class="gig-city" innerHTML={gig.city}></span><br />
-                            {gig.time &&
-                                <span class="gig-time">Aanvang: <span innerHTML={gig.time}></span></span>
-                            }
-                        </p>
-                    )
+                        .map(gig =>
+                            <p class={{ 'cancelled': gig.cancelled }}>
+                                {gig.cancelled && <b>CANCELLED </b>}
+                                <span class="gig-date" innerHTML={this.getDate(gig)}></span><br />
+                                {this.getVenue(gig)} <span class="gig-city" innerHTML={gig.city}></span><br />
+                                {gig.time &&
+                                    <span class="gig-time">Aanvang: <span innerHTML={gig.time}></span></span>
+                                }
+                            </p>
+                        )
                 }
                 {upcomingGigs.length === 0 &&
                     <p>Binnenkort staan hier de tourdata van What the Frnk</p>

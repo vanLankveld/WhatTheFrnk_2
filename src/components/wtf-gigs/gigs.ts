@@ -71,11 +71,13 @@ export var gigs: Gig[] = [
     new Gig({ date: '2024-04-13', city: 'Monster', time: '20:00', venue: 'Blues aan zee', website: "https://bluesaanzee.nl/component/eventbooking/blues-avonden/blues-band-in-monster" }),
     new Gig({ date: '2024-05-10', city: 'Breda', venue: 'Breda Jazz', website: "https://www.bredajazzfestival.nl/" }),
     new Gig({ date: '2024-05-26', city: 'Alkmaar', time: '16:30', venue: 'Jazz & Blues in de Hout', cancelled: true }),
-    new Gig({ date: '2024-06-01', city: 'Kranenburg (DE)', venue: 'Zyfflich blues festival', website: "https://festivalinzyfflich.de/" }),
-    new Gig({ date: '2024-06-28', city: 'Rotterdam (Hillegersberg)', venue: 'Hilligersberg jazz', time: '19:30', website: 'https://www.jazzhillegersberg.nl/' }),
-    new Gig({ date: '2024-06-30', city: 'Luyksgestel', venue: 'Openluchttheater De Hunnebergen', website: "https://www.hunnebergen.com/" }),
+    new Gig({ date: '2024-06-01', city: 'Kranenburg (DE)', time: '21:00', venue: 'Zyfflich blues festival', website: "https://festivalinzyfflich.de/" }),
+    new Gig({ date: '2024-06-27', city: 'Culemborg', time: '21:00', venue: 'Blues @ The Factory (Frank Solo)', website: 'https://www.culemborgblues.nl/blues-the-factory/' }),
+    new Gig({ date: '2024-06-28', city: 'Rotterdam (Hillegersberg)', time: '19:45', venue: 'Hilligersberg jazz', website: 'https://www.jazzhillegersberg.nl/' }),
+    new Gig({ date: '2024-06-30', city: 'Luyksgestel', time: '16:00', venue: 'Blue Moods and Green leaves', website: "https://www.hunnebergen.com/featured_item/blue-moods-and-green-leaves-bluesfestival-via-monkeyman/" }),
     new Gig({ date: '2024-08-17', city: 'Duiven', venue: 'Bluesnight', time: '21:00', website: "https://duuvesmixedmusic.nl/agenda/bluesfestival-2024" }),
     new Gig({ date: '2024-08-18', city: 'Eindhoven', venue: 'Blue Square', website: "https://www.cafewilhelmina.nl/bluesquarefestival" }),
+    new Gig({ date: '2024-09-29', city: 'Gemert', venue: 'Gij & Ik', time: "16:00", website: 'https://gijenik.nl/' }),
 ]
 
 gigs.sort((a, b) => {

@@ -35,12 +35,12 @@ export class WtfMedia {
                 <div class="d-sm-block d-md-none">
                     <h4>Media</h4>
                 </div>
+                <a class="wtf-media-item" target="_blank" href="spotify:album:6SAPdwBGJABWYS0TJIXDCr">
+                    <img src={`./assets/img/albumcover.jpg`} class="img-fluid" alt="What The Frnk" />
+                </a>
                 {this.videos.map(id => [
                     <wtf-youtube videoId={id} onPlayerStart={this.onPlayerStart}></wtf-youtube>
                 ])}
-                <a target="_blank" href="https://open.spotify.com/album/6Si7za91K7HlhUsm1pewj1?si=eWeJUJGRR5aoQeynhI1qxg">
-                    <img src={`./assets/img/albumcover.jpg`} class="img-fluid" alt="What The Frnk" />
-                </a>
             </div>
         );
     }

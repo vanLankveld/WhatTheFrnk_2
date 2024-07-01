@@ -35,7 +35,7 @@ export class WtfMedia {
                 <div class="d-sm-block d-md-none">
                     <h4>Media</h4>
                 </div>
-                <a class="wtf-media-item" target="_blank" href="spotify:album:6SAPdwBGJABWYS0TJIXDCr">
+                <a class="wtf-media-item" target="_blank" href="spotify:album:7ilGxYmG69ZJlRKv0ueQZB"> 
                     <img src={`./assets/img/albumcover.jpg`} class="img-fluid" alt="What The Frnk" />
                 </a>
                 {this.videos.map(id => [

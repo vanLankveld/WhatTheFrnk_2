@@ -1,5 +1,5 @@
 RewriteEngine On
-Redirect 301 /single /
+Redirect 301 /single https://open.spotify.com/album/7ilGxYmG69ZJlRKv0ueQZB?si=9YmJzbG2SKy5X2K2VZabhg
 
 AddDefaultCharset utf-8
 AddCharset UTF-8 .html

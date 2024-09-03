@@ -75,10 +75,20 @@ export var gigs: Gig[] = [
     new Gig({ date: '2024-06-27', city: 'Culemborg', time: '21:00', venue: 'Blues @ The Factory (Frank Solo)', website: 'https://www.culemborgblues.nl/blues-the-factory/' }),
     new Gig({ date: '2024-06-28', city: 'Rotterdam (Hillegersberg)', time: '19:45', venue: 'Hilligersberg jazz', website: 'https://www.jazzhillegersberg.nl/' }),
     new Gig({ date: '2024-06-30', city: 'Luyksgestel', time: '16:00', venue: 'Blue Moods and Green leaves', website: "https://www.hunnebergen.com/featured_item/blue-moods-and-green-leaves-bluesfestival-via-monkeyman/" }),
+    new Gig({ date: '2024-08-14', city: 'Giethoorn', venue: 'Foodtruck Festival', time: '22:00', /*website: "https://steenwijkvestingstad.nl/evenementen/foodtruckfestival?utm_source=DagjeWeg.NL&utm_medium=referral&utm_campaign=pagina&utm_content=uitstapje"*/ }),
     new Gig({ date: '2024-08-17', city: 'Duiven', venue: 'Bluesnight', time: '21:00', website: "https://duuvesmixedmusic.nl/agenda/bluesfestival-2024" }),
     new Gig({ date: '2024-08-18', city: 'Eindhoven', venue: 'Blue Square', website: "https://www.cafewilhelmina.nl/bluesquarefestival" }),
+    new Gig({ date: '2024-09-14', city: 'Krimpen aan den IJssel', venue: 'Krimpen Open Air' }),
     new Gig({ date: '2024-09-29', city: 'Gemert', venue: 'Gij & Ik', time: "16:00", website: 'https://gijenik.nl/' }),
+    new Gig({ date: '2025-03-11', city: 'Hoogland', venue: 'Cafe De Noot', time: "21:30", website: 'https://denoot.nl/Agenda' }),
+    new Gig({ date: '2025-06-09', city: 'Rheine (DE)', venue: 'Jazz Open-Air am Kloster' }),
+    new Gig({ date: '2025-08-12', city: 'Culemborg', venue: 'Culemborg Blues', time: "15:00", website: 'https://www.culemborgblues.nl/' }),
+    new Gig({ date: '2025-08-12', city: 'Hasel&uuml;nne (DE)', venue: 'Hasel&uuml;nner B&uuml;hnen', time: "16:00", website: 'https://haseluennerbuehnen.de/' }),
 ]
+
+//22-03
+//09-06
+//23-08
 
 gigs.sort((a, b) => {
     return a.date.getTime() - b.date.getTime();

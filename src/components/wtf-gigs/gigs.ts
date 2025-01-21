@@ -80,15 +80,19 @@ export var gigs: Gig[] = [
     new Gig({ date: '2024-08-18', city: 'Eindhoven', venue: 'Blue Square', website: "https://www.cafewilhelmina.nl/bluesquarefestival" }),
     new Gig({ date: '2024-09-14', city: 'Krimpen aan den IJssel', venue: 'Krimpen Open Air' }),
     new Gig({ date: '2024-09-29', city: 'Gemert', venue: 'Gij & Ik', time: "16:00", website: 'https://gijenik.nl/' }),
-    new Gig({ date: '2025-03-11', city: 'Hoogland', venue: 'Cafe De Noot', time: "21:30", website: 'https://denoot.nl/Agenda' }),
+    new Gig({ date: '2024-10-12', city: 'Tilburg', venue: 'Heyhoef-Backstage - Support voor Kai Strauss', time: "20:30", website: 'https://www.heyhoef-backstage.nl/product/heyhoef-backstage-kai-strauss-19-oktober-2024/' }),
+    new Gig({ date: '2024-11-16', city: 'Breda', venue: 'Cafaf&eacute; Lievense', time: "21:00", website: 'https://cafelievense.nl/what-the-frnk/' }),
+    new Gig({ date: '2025-03-22', city: 'Hoogland', venue: 'Cafe De Noot', time: "21:30", website: 'https://denoot.nl/Agenda' }),
+    new Gig({ date: '2025-03-23', city: 'Meppel', venue: 'Cafe La Porte', time: "16:30", website: 'https://cafelaporte.com/blog-post13' }),
+    new Gig({ date: '2025-05-04', city: 'Bergen', venue: 'Taverne', website: 'https://www.tavernebergen.nl/' }),
+    new Gig({ date: '2025-05-17', city: 'Gemert', venue: 'De Bunker',  time: "20:00", website: 'https://www.bunkergemert.nl/' }),
     new Gig({ date: '2025-06-09', city: 'Rheine (DE)', venue: 'Jazz Open-Air am Kloster' }),
-    new Gig({ date: '2025-08-12', city: 'Culemborg', venue: 'Culemborg Blues', time: "15:00", website: 'https://www.culemborgblues.nl/' }),
+    new Gig({ date: '2025-06-22', city: 'Alkmaar', venue: 'De Hout', website: "https://cultuurparkdehout.nl/" }),
+    new Gig({ date: '2025-07-27', city: 'Brielle', venue: 'Brielle Blues', website: 'https://www.brielleblues.nl/' }),
+    new Gig({ date: '2025-08-12', city: 'Bergen', venue: 'Bergen Live', website: 'https://bergenlive.nl/' }),
     new Gig({ date: '2025-08-12', city: 'Hasel&uuml;nne (DE)', venue: 'Hasel&uuml;nner B&uuml;hnen', time: "16:00", website: 'https://haseluennerbuehnen.de/' }),
-]
-
-//22-03
-//09-06
-//23-08
+    new Gig({ date: '2025-09-07', city: 'Eibergen', venue: 'Festival TBA' }), 
+];
 
 gigs.sort((a, b) => {
     return a.date.getTime() - b.date.getTime();
